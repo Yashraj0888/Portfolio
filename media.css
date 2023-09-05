@@ -48,6 +48,10 @@
   }
   
   @media screen and (max-width: 600px) {
+    *::selection{
+        background-color:rgb(85, 85, 85);
+        color: wheat; 
+    }
     #contact,
     footer {
       height: 40vh;
