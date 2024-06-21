@@ -22,7 +22,10 @@ A personal portfolio website to showcase your projects, skills, and experiences.
 
 ## Demo
 
+
 You can see a live demo of the Personal Portfolio Website [here](https://yashraj0888.github.io/Portfolio/).
+![Example Image](Screenshot1.png)
+
 
 ## Installation
 
