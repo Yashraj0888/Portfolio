@@ -15,7 +15,7 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#experience" >Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -30,10 +30,10 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="#about" onclick="toggleMenu()" target="_blank">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()" target="_blank">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()" target="_blank">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()" target="_blank">Contact</a></li>
         </div>
       </div>
     </nav>
@@ -44,15 +44,15 @@
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Yashraj Singh</h1>
-        <p class="section__text__p2">Frontend Developer</p>
+        <p class="section__text__p2">Full-Stack Developer</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./Yashraj.pdf')"
+            onclick="window.open('./Yashraj.pdf', '_blank')"
           >
             Download CV
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          <button class="btn btn-color-1" onclick="location.href='./#contact'" target="_blank">
             Contact Info
           </button>
         </div>
@@ -62,12 +62,14 @@
             alt="My LinkedIn profile"
             class="icon"
             onclick="location.href='https://www.linkedin.com/in/yashraj-singh-55804b253/'"
+            target="_blank"
           />
           <img
             src="./assets/github.png"
             alt="My Github profile"
             class="icon"
             onclick="location.href='https://github.com/Yashraj0888'"
+            target="_blank"
           />
         </div>
       </div>
@@ -116,6 +118,7 @@
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#experience'"
+        target="_blank"
       />
     </section>
     <section id="experience">
@@ -192,6 +195,7 @@
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#projects'"
+        target="_blank"
       />
     </section>
     <section id="projects">
@@ -212,12 +216,14 @@
               <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/Yashraj0888/Weather'"
+                target="_blank"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://yashraj0888.github.io/Weather/'"
+                target="_blank"
               >
                 Live Demo
               </button>
@@ -236,12 +242,14 @@
               <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/Yashraj0888/BMI-Calculator'"
+                target="_blank"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://yashraj0888.github.io/BMI-Calculator/'"
+                target="_blank"
               >
                 Live Demo
               </button>
@@ -255,43 +263,50 @@
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#contact'"
+        target="_blank"
       />
     </section>
     <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
+      <p class="section__text__p1">Let's Talk</p>
       <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:yashraj88813@gmail.com">yashraj88813@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/yashraj-singh-55804b253/">LinkedIn</a></p>
-        </div>
+      <div class="section-container">
+        <form action="#" class="form" id="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              name="message"
+              placeholder="Enter your message"
+              rows="5"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-color-1">Send</button>
+        </form>
       </div>
     </section>
     <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2023 Yashraj Singh. All Rights Reserved.</p>
+      <p>© 2024 Yashraj Singh. All Rights Reserved.</p>
     </footer>
-    <script src="script.js"></script>
   </body>
 </html>
