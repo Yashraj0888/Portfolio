@@ -1,0 +1,38 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "tokens:generate": "node .cursor/skills/design-system/scripts/generate-tokens.cjs --config assets/design-tokens.json -o assets/design-tokens.css"
+  },
+  "dependencies": {
+    "@base-ui/react": "^1.7.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^13.1.1",
+    "lucide-react": "^1.35.0",
+    "next": "^15.3.3",
+    "nodemailer": "^9.0.6",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "shadcn": "^4.19.0",
+    "tailwind-merge": "^3.6.0",
+    "tw-animate-css": "^1.4.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^22.15.21",
+    "@types/nodemailer": "^8.0.1",
+    "@types/react": "^19.1.4",
+    "@types/react-dom": "^19.1.5",
+    "eslint": "^9.27.0",
+    "eslint-config-next": "^15.3.3",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.8.3"
+  }
+}

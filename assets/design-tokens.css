@@ -1,0 +1,76 @@
+/* Design Tokens - Auto-generated */
+/* Do not edit directly - modify tokens.json instead */
+
+/* === PRIMITIVES === */
+:root {
+  --primitive-color-ink: #0A0A0A;
+  --primitive-color-surface: #FAFAF8;
+  --primitive-color-white: #FFFFFF;
+  --primitive-color-muted: #6B6B6B;
+  --primitive-color-line: #E8E8E4;
+  --primitive-color-dark: #111111;
+  --primitive-color-dark-muted: #888888;
+  --primitive-color-accent: #10B981;
+  --primitive-color-accent-light: #34D399;
+  --primitive-spacing-1: 0.25rem;
+  --primitive-spacing-2: 0.5rem;
+  --primitive-spacing-3: 0.75rem;
+  --primitive-spacing-4: 1rem;
+  --primitive-spacing-6: 1.5rem;
+  --primitive-spacing-8: 2rem;
+  --primitive-spacing-12: 3rem;
+  --primitive-spacing-16: 4rem;
+  --primitive-spacing-24: 6rem;
+  --primitive-radius-sm: 0.5rem;
+  --primitive-radius-md: 0.75rem;
+  --primitive-radius-lg: 1rem;
+  --primitive-radius-xl: 1.5rem;
+  --primitive-radius-full: 9999px;
+  --primitive-shadow-pill: 0 2px 24px rgba(0, 0, 0, 0.06);
+  --primitive-shadow-card: 0 4px 40px rgba(0, 0, 0, 0.04);
+  --primitive-shadow-elevated: 0 8px 48px rgba(0, 0, 0, 0.08);
+  --primitive-duration-fast: 150ms;
+  --primitive-duration-normal: 300ms;
+  --primitive-duration-slow: 500ms;
+}
+
+/* === SEMANTIC === */
+:root {
+  --color-background: #FAFAF8;
+  --color-foreground: #0A0A0A;
+  --color-primary: #0A0A0A;
+  --color-primary-foreground: #FFFFFF;
+  --color-secondary: #FFFFFF;
+  --color-secondary-foreground: #0A0A0A;
+  --color-muted: #E8E8E4;
+  --color-muted-foreground: #6B6B6B;
+  --color-accent: #10B981;
+  --color-accent-foreground: #FFFFFF;
+  --color-border: #E8E8E4;
+  --color-ring: #0A0A0A;
+  --color-card: #FFFFFF;
+  --color-card-foreground: #0A0A0A;
+}
+
+/* === COMPONENTS === */
+:root {
+  --button-bg: #0A0A0A;
+  --button-fg: #FFFFFF;
+  --button-radius: 9999px;
+  --button-shadow: 0 2px 24px rgba(0, 0, 0, 0.06);
+  --card-bg: #FFFFFF;
+  --card-border: #E8E8E4;
+  --card-shadow: 0 4px 40px rgba(0, 0, 0, 0.04);
+  --card-radius: 1.5rem;
+  --badge-bg: #FFFFFF;
+  --badge-shadow: 0 2px 24px rgba(0, 0, 0, 0.06);
+  --badge-radius: 9999px;
+}
+
+/* === DARK MODE === */
+.dark {
+  --color-background: #111111;
+  --color-foreground: #FFFFFF;
+  --color-muted-foreground: #888888;
+  --color-border: rgba(255,255,255,0.1);
+}

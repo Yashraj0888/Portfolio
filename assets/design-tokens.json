@@ -1,0 +1,91 @@
+{
+  "$schema": "https://design-tokens.org/schema.json",
+  "primitive": {
+    "color": {
+      "ink": { "$value": "#0A0A0A", "$type": "color" },
+      "surface": { "$value": "#FAFAF8", "$type": "color" },
+      "white": { "$value": "#FFFFFF", "$type": "color" },
+      "muted": { "$value": "#6B6B6B", "$type": "color" },
+      "line": { "$value": "#E8E8E4", "$type": "color" },
+      "dark": { "$value": "#111111", "$type": "color" },
+      "dark-muted": { "$value": "#888888", "$type": "color" },
+      "accent": { "$value": "#10B981", "$type": "color" },
+      "accent-light": { "$value": "#34D399", "$type": "color" }
+    },
+    "spacing": {
+      "1": { "$value": "0.25rem", "$type": "dimension" },
+      "2": { "$value": "0.5rem", "$type": "dimension" },
+      "3": { "$value": "0.75rem", "$type": "dimension" },
+      "4": { "$value": "1rem", "$type": "dimension" },
+      "6": { "$value": "1.5rem", "$type": "dimension" },
+      "8": { "$value": "2rem", "$type": "dimension" },
+      "12": { "$value": "3rem", "$type": "dimension" },
+      "16": { "$value": "4rem", "$type": "dimension" },
+      "24": { "$value": "6rem", "$type": "dimension" }
+    },
+    "radius": {
+      "sm": { "$value": "0.5rem", "$type": "dimension" },
+      "md": { "$value": "0.75rem", "$type": "dimension" },
+      "lg": { "$value": "1rem", "$type": "dimension" },
+      "xl": { "$value": "1.5rem", "$type": "dimension" },
+      "full": { "$value": "9999px", "$type": "dimension" }
+    },
+    "shadow": {
+      "pill": { "$value": "0 2px 24px rgba(0, 0, 0, 0.06)", "$type": "shadow" },
+      "card": { "$value": "0 4px 40px rgba(0, 0, 0, 0.04)", "$type": "shadow" },
+      "elevated": { "$value": "0 8px 48px rgba(0, 0, 0, 0.08)", "$type": "shadow" }
+    },
+    "duration": {
+      "fast": { "$value": "150ms", "$type": "duration" },
+      "normal": { "$value": "300ms", "$type": "duration" },
+      "slow": { "$value": "500ms", "$type": "duration" }
+    }
+  },
+  "semantic": {
+    "color": {
+      "background": { "$value": "{primitive.color.surface}", "$type": "color" },
+      "foreground": { "$value": "{primitive.color.ink}", "$type": "color" },
+      "primary": { "$value": "{primitive.color.ink}", "$type": "color" },
+      "primary-foreground": { "$value": "{primitive.color.white}", "$type": "color" },
+      "secondary": { "$value": "{primitive.color.white}", "$type": "color" },
+      "secondary-foreground": { "$value": "{primitive.color.ink}", "$type": "color" },
+      "muted": { "$value": "{primitive.color.line}", "$type": "color" },
+      "muted-foreground": { "$value": "{primitive.color.muted}", "$type": "color" },
+      "accent": { "$value": "{primitive.color.accent}", "$type": "color" },
+      "accent-foreground": { "$value": "{primitive.color.white}", "$type": "color" },
+      "border": { "$value": "{primitive.color.line}", "$type": "color" },
+      "ring": { "$value": "{primitive.color.ink}", "$type": "color" },
+      "card": { "$value": "{primitive.color.white}", "$type": "color" },
+      "card-foreground": { "$value": "{primitive.color.ink}", "$type": "color" }
+    }
+  },
+  "component": {
+    "button": {
+      "bg": { "$value": "{semantic.color.primary}", "$type": "color" },
+      "fg": { "$value": "{semantic.color.primary-foreground}", "$type": "color" },
+      "radius": { "$value": "{primitive.radius.full}", "$type": "dimension" },
+      "shadow": { "$value": "{primitive.shadow.pill}", "$type": "shadow" }
+    },
+    "card": {
+      "bg": { "$value": "{semantic.color.card}", "$type": "color" },
+      "border": { "$value": "{semantic.color.border}", "$type": "color" },
+      "shadow": { "$value": "{primitive.shadow.card}", "$type": "shadow" },
+      "radius": { "$value": "{primitive.radius.xl}", "$type": "dimension" }
+    },
+    "badge": {
+      "bg": { "$value": "{primitive.color.white}", "$type": "color" },
+      "shadow": { "$value": "{primitive.shadow.pill}", "$type": "shadow" },
+      "radius": { "$value": "{primitive.radius.full}", "$type": "dimension" }
+    }
+  },
+  "dark": {
+    "semantic": {
+      "color": {
+        "background": { "$value": "{primitive.color.dark}", "$type": "color" },
+        "foreground": { "$value": "{primitive.color.white}", "$type": "color" },
+        "muted-foreground": { "$value": "{primitive.color.dark-muted}", "$type": "color" },
+        "border": { "$value": "rgba(255,255,255,0.1)", "$type": "color" }
+      }
+    }
+  }
+}
