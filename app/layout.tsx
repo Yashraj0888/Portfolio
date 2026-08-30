@@ -33,6 +33,9 @@ export const metadata: Metadata = {
   appleWebApp: {
     title: "Yashraj Singh",
   },
+  verification: {
+    google: "36mbH4hO3_WuyLRlo8XkOxUqVzAU_QC4Cfvqk-_ItNY",
+  },
 };
 
 export default function RootLayout({
