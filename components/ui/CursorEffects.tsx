@@ -23,14 +23,14 @@ export default function CursorEffects() {
   const cursorX = useMotionValue(-200);
   const cursorY = useMotionValue(-200);
 
-  const glowX = useSpring(cursorX, { stiffness: 55, damping: 24, mass: 0.9 });
-  const glowY = useSpring(cursorY, { stiffness: 55, damping: 24, mass: 0.9 });
+  const glowX = useSpring(cursorX, { stiffness: 220, damping: 28, mass: 0.35 });
+  const glowY = useSpring(cursorY, { stiffness: 220, damping: 28, mass: 0.35 });
 
-  const ringX = useSpring(cursorX, { stiffness: 160, damping: 24, mass: 0.5 });
-  const ringY = useSpring(cursorY, { stiffness: 160, damping: 24, mass: 0.5 });
+  const ringX = useSpring(cursorX, { stiffness: 650, damping: 38, mass: 0.15 });
+  const ringY = useSpring(cursorY, { stiffness: 650, damping: 38, mass: 0.15 });
 
-  const dotX = useSpring(cursorX, { stiffness: 480, damping: 38, mass: 0.2 });
-  const dotY = useSpring(cursorY, { stiffness: 480, damping: 38, mass: 0.2 });
+  const dotX = useSpring(cursorX, { stiffness: 2000, damping: 55, mass: 0.05 });
+  const dotY = useSpring(cursorY, { stiffness: 2000, damping: 55, mass: 0.05 });
 
   const pageGlow = useMotionTemplate`
     radial-gradient(720px circle at ${glowX}px ${glowY}px, rgba(16,185,129,0.24) 0%, rgba(16,185,129,0.1) 38%, transparent 72%),
@@ -62,7 +62,7 @@ export default function CursorEffects() {
     const onMove = (e: MouseEvent) => {
       cursorX.set(e.clientX);
       cursorY.set(e.clientY);
-      setVisible(true);
+      setVisible((v) => (v ? v : true));
     };
 
     const onLeave = () => setVisible(false);
@@ -133,7 +133,7 @@ export default function CursorEffects() {
           height: hovering ? 48 : 32,
           backgroundColor: hovering ? "rgba(10,10,10,0.04)" : "rgba(10,10,10,0)",
         }}
-        transition={{ type: "spring", stiffness: 260, damping: 24 }}
+        transition={{ type: "spring", stiffness: 520, damping: 32 }}
         style={{ x: ringX, y: ringY }}
       />
 
@@ -145,7 +145,7 @@ export default function CursorEffects() {
           opacity: visible ? 1 : 0,
           scale: hovering ? 0 : 1,
         }}
-        transition={{ type: "spring", stiffness: 320, damping: 26 }}
+        transition={{ type: "spring", stiffness: 700, damping: 35 }}
         style={{ x: dotX, y: dotY }}
       />
 

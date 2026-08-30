@@ -22,6 +22,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://portfolioyashraj.vercel.app"),
   title: "Yashraj Singh | Full-Stack Developer",
   description:
     "Full-Stack Developer portfolio — projects, services, and experience.",

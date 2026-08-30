@@ -15,11 +15,11 @@ export default function CursorParallax({
   const cursorX = useMotionValue(0);
   const cursorY = useMotionValue(0);
 
-  const springX = useSpring(cursorX, { stiffness: 80, damping: 22 });
-  const springY = useSpring(cursorY, { stiffness: 80, damping: 22 });
+  const springX = useSpring(cursorX, { stiffness: 280, damping: 28 });
+  const springY = useSpring(cursorY, { stiffness: 280, damping: 28 });
 
-  const rotateX = useTransform(springY, [-0.5, 0.5], [2.5, -2.5]);
-  const rotateY = useTransform(springX, [-0.5, 0.5], [-2.5, 2.5]);
+  const rotateX = useTransform(springY, [-0.5, 0.5], [1.4, -1.4]);
+  const rotateY = useTransform(springX, [-0.5, 0.5], [-1.4, 1.4]);
 
   useEffect(() => {
     const finePointer = window.matchMedia("(pointer: fine)").matches;
